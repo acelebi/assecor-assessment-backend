@@ -30,7 +30,6 @@ public class PersonService {
     public void init() {
         if ("db".equalsIgnoreCase(dataSource)) {
             activeRepository = jpaRepository;
-            // Import CSV to DB on startup (Bonus: Second source)
             List<Person> persons = csvRepository.findAll();
             jpaRepository.saveAll(persons);
         } else {
