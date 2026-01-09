@@ -34,7 +34,6 @@ public class PersonController {
         return personService.findByColor(color);
     }
 
-    // Bonus: POST to add new person
     @PostMapping
     public Person addPerson(@RequestBody Person person) {
         return personService.save(person);
