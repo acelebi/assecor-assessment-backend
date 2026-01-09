@@ -1,0 +1,30 @@
+assecor-assessment-backend
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── assecor
+│   │   │           └── assessment
+│   │   │               ├── AssessmentApplication.java
+│   │   │               ├── model
+│   │   │               │   └── Person.java
+│   │   │               ├── repository
+│   │   │               │   ├── PersonRepository.java
+│   │   │               │   ├── CsvPersonRepository.java
+│   │   │               │   └── JpaPersonRepository.java
+│   │   │               ├── service
+│   │   │               │   └── PersonService.java
+│   │   │               └── controller
+│   │   │                   └── PersonController.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       └── sample-input.csv  
+│   └── test
+│       └── java
+│           └── com
+│               └── assecor
+│                   └── assessment
+│                       └── controller
+│                           └── PersonControllerTest.java
+└── README.md  
